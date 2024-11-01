@@ -9,7 +9,7 @@ const Questionnaire = () => {
         <img className="w-24" src={logo} alt="logo" />
         <div className="flex gap-8 items-center">
           <h1 className="text-white text-lg font-bold w">
-            Olá, <span>Carlos</span>
+            Olá, <span>Fabão</span>
           </h1>
           <Link to={"/"}>
             <IoIosLogOut color="white" size={30} />
