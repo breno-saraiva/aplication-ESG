@@ -16,6 +16,9 @@ const Questionnaire = () => {
           </Link>
         </div>
       </header>
+      <main>
+        <h1>Hello world</h1>
+      </main>
     </>
   );
 };
