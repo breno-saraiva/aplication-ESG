@@ -30,7 +30,7 @@ const Login = () => {
             <TabsTrigger value="register">Cadastre-se</TabsTrigger>
           </TabsList>
           <TabsContent
-            className="bg-green-600/70 rounded-lg p-4"
+            className="h-[400px] bg-green-600/70 rounded-lg p-4"
             value="signIn"
           >
             <SignIn />

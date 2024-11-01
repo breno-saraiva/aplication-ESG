@@ -6,7 +6,7 @@ const Register = () => {
   return (
     <div className="p-4">
       <div className="my-4 flex items-center justify-center">
-        <h1 className="text-white text-lg font-bold">Crie Sua conta</h1>
+        <h1 className="text-white text-2xl font-bold">Crie Sua conta</h1>
       </div>
       <div className="flex flex-col gap-4">
         <div>
@@ -25,7 +25,9 @@ const Register = () => {
           />
         </div>
         <div className="pt-3 flex justify-center items-center">
-          <Button className="text-lg bg-[#FF6F20]">Cadastrar</Button>
+          <Button className="text-lg bg-[#FF6F20] hover:bg-orange-400">
+            Cadastrar
+          </Button>
         </div>
       </div>
     </div>
