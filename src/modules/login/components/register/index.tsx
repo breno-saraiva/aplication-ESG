@@ -11,11 +11,11 @@ const Register = () => {
       <div className="flex flex-col gap-4">
         <div>
           <Label className="text-white">Nome do Usuário:</Label>
-          <Input className="bg-white" placeholder="Digite seu usuário..." />
+          <Input className="bg-white" placeholder="Digite o usuário..." />
         </div>
         <div>
           <Label className="text-white">Senha:</Label>
-          <Input className="bg-white" placeholder="Digite sua senha..." />
+          <Input className="bg-white" placeholder="Digite a senha..." />
         </div>
         <div>
           <Label className="text-white">Confirme a Senha:</Label>
@@ -24,7 +24,7 @@ const Register = () => {
             placeholder="Digite a senha novamente..."
           />
         </div>
-        <div className="flex justify-center items-center">
+        <div className="pt-3 flex justify-center items-center">
           <Button className="text-lg bg-[#FF6F20]">Cadastrar</Button>
         </div>
       </div>
