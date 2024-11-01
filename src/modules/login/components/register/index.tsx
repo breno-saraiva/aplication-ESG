@@ -6,16 +6,16 @@ const Register = () => {
   return (
     <div className="p-4">
       <div className="my-4 flex items-center justify-center">
-        <h1 className="text-white text-lg font-bold">Crie Sua conta</h1>
+        <h1 className="text-white text-2xl font-bold">Crie Sua conta</h1>
       </div>
       <div className="flex flex-col gap-4">
         <div>
           <Label className="text-white">Nome do Usuário:</Label>
-          <Input className="bg-white" placeholder="Digite seu usuário..." />
+          <Input className="bg-white" placeholder="Digite o usuário..." />
         </div>
         <div>
           <Label className="text-white">Senha:</Label>
-          <Input className="bg-white" placeholder="Digite sua senha..." />
+          <Input className="bg-white" placeholder="Digite a senha..." />
         </div>
         <div>
           <Label className="text-white">Confirme a Senha:</Label>
@@ -24,8 +24,10 @@ const Register = () => {
             placeholder="Digite a senha novamente..."
           />
         </div>
-        <div className="flex justify-center items-center">
-          <Button className="text-lg bg-[#FF6F20]">Cadastrar</Button>
+        <div className="pt-3 flex justify-center items-center">
+          <Button className="text-lg bg-[#FF6F20] hover:bg-orange-400">
+            Cadastrar
+          </Button>
         </div>
       </div>
     </div>

@@ -24,13 +24,13 @@ const Login = () => {
         </div>
       </div>
       <div className="m-auto">
-        <Tabs defaultValue="account" className="w-[400px]">
+        <Tabs defaultValue="signIn" className="w-[400px]">
           <TabsList className="bg-green-600/70 text-white">
             <TabsTrigger value="signIn">Login</TabsTrigger>
             <TabsTrigger value="register">Cadastre-se</TabsTrigger>
           </TabsList>
           <TabsContent
-            className="bg-green-600/70 rounded-lg p-4"
+            className="h-[400px] bg-green-600/70 rounded-lg p-4"
             value="signIn"
           >
             <SignIn />
