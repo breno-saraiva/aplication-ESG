@@ -2,6 +2,9 @@ import logo from "@/shared/assets/logo.png";
 import { Checkbox } from "@/shared/components/ui/checkbox";
 import { IoIosLogOut } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { FaFaceSadTear } from "react-icons/fa6";
+import { FaFaceSmileBeam } from "react-icons/fa6";
+import { FaFaceGrinBeam } from "react-icons/fa6";
 
 const Questionnaire = () => {
   return (
@@ -17,13 +20,18 @@ const Questionnaire = () => {
           </Link>
         </div>
       </header>
-      <main className="w-full px-24 mt-8 flex flex-col gap-8">
+      <main className="w-full px-24 mt-8 flex flex-col gap-6">
         <div className="flex justify-center items-center">
           <h1 className="font-semibold text-4xl text-green-800">
             Sustentabilidade
           </h1>
         </div>
-        <div></div>
+        <div className="mx-36 flex flex-col justify-center items-center gap-4 bg-red-500 px-12 py-2 rounded-3xl">
+          <h1 className="text-white font-bold text-xl">
+            Você precisa cuidar do nosso planeta!
+          </h1>
+          <FaFaceSadTear size={60} className="text-white" />
+        </div>
         <div className="flex flex-col gap-4">
           <div className="w-full h-2 rounded-full bg-green-500 flex">
             {/* 0% */}
@@ -93,6 +101,7 @@ const Questionnaire = () => {
               </div>
             </div>
           </div>
+          {/* contagem da porcentagem */}
           <div className="w-full flex justify-between">
             <h1>0%</h1>
             <h1>10%</h1>
@@ -107,61 +116,65 @@ const Questionnaire = () => {
             <h1>100%</h1>
           </div>
         </div>
-        <div className="flex flex-col gap-2">
-          <div className="flex items-center gap-2">
-            <Checkbox id="1" />
-            <label htmlFor="1">Demorou menos 15 minutos no banho</label>
+        <div className="flex">
+          <div className="w-full mt-12 flex flex-col gap-2">
+            <div className="flex items-center gap-2">
+              <Checkbox id="1" />
+              <label htmlFor="1">Demorou menos 15 minutos no banho</label>
+            </div>
+            <div className="flex items-center gap-2">
+              <Checkbox id="2" />
+              <label htmlFor="2">
+                Desligou a torneira da pia enquanto escovava os dentes
+              </label>
+            </div>
+            <div className="flex items-center gap-2">
+              <Checkbox id="3" />
+              <label htmlFor="3">
+                Fechou bem o registro, para evitar vazamentos
+              </label>
+            </div>
+            <div className="flex items-center gap-2">
+              <Checkbox id="4" />
+              <label htmlFor="4">
+                Fechou a torneira enquanto higienizava a louça
+              </label>
+            </div>
+            <div className="flex items-center gap-2">
+              <Checkbox id="5" />
+              <label htmlFor="5">
+                Juntou roupa o suficiente para não ter que fazer múltiplas
+                lavagens
+              </label>
+            </div>
           </div>
-          <div className="flex items-center gap-2">
-            <Checkbox id="2" />
-            <label htmlFor="2">
-              Desligou a torneira da pia enquanto escovava os dentes
-            </label>
-          </div>
-          <div className="flex items-center gap-2">
-            <Checkbox id="3" />
-            <label htmlFor="3">
-              Fechou bem o registro, para evitar vazamentos
-            </label>
-          </div>
-          <div className="flex items-center gap-2">
-            <Checkbox id="4" />
-            <label htmlFor="4">
-              Fechou a torneira enquanto higienizava a louça
-            </label>
-          </div>
-          <div className="flex items-center gap-2">
-            <Checkbox id="5" />
-            <label htmlFor="5">
-              Juntou roupa o suficiente para não ter que fazer múltiplas
-              lavagens
-            </label>
-          </div>
-          <div className="flex items-center gap-2">
-            <Checkbox id="6" />
-            <label htmlFor="6">
-              Utilizou lâmpadas de LED para economizar energia
-            </label>
-          </div>
-          <div className="flex items-center gap-2">
-            <Checkbox id="7" />
-            <label htmlFor="7">
-              Reutilizou sacolas plásticas ou usou sacolas reutilizáveis
-            </label>
-          </div>
-          <div className="flex items-center gap-2">
-            <Checkbox id="8" />
-            <label htmlFor="8">Separou o lixo para reciclagem</label>
-          </div>
-          <div className="flex items-center gap-2">
-            <Checkbox id="9" />
-            <label htmlFor="9">Optou por produtos com menos embalagens</label>
-          </div>
-          <div className="flex items-center gap-2">
-            <Checkbox id="10" />
-            <label htmlFor="10">
-              Evitou o uso de descartáveis, preferindo itens reutilizáveis
-            </label>
+          <div className="w-full m-12 flex flex-col gap-2">
+            <div className="flex items-center gap-2">
+              <Checkbox id="6" />
+              <label htmlFor="6">
+                Utilizou lâmpadas de LED para economizar energia
+              </label>
+            </div>
+            <div className="flex items-center gap-2">
+              <Checkbox id="7" />
+              <label htmlFor="7">
+                Reutilizou sacolas plásticas ou usou sacolas reutilizáveis
+              </label>
+            </div>
+            <div className="flex items-center gap-2">
+              <Checkbox id="8" />
+              <label htmlFor="8">Separou o lixo para reciclagem</label>
+            </div>
+            <div className="flex items-center gap-2">
+              <Checkbox id="9" />
+              <label htmlFor="9">Optou por produtos com menos embalagens</label>
+            </div>
+            <div className="flex items-center gap-2">
+              <Checkbox id="10" />
+              <label htmlFor="10">
+                Evitou o uso de descartáveis, preferindo itens reutilizáveis
+              </label>
+            </div>
           </div>
         </div>
       </main>
