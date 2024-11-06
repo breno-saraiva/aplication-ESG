@@ -1,8 +1,14 @@
 import { Button } from "@/shared/components/ui/button";
 import { Input } from "@/shared/components/ui/input";
 import { Label } from "@/shared/components/ui/label";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+  const navigate = useNavigate();
+  function handleRegister() {
+    navigate("/check-list");
+  }
+
   return (
     <div className="p-4">
       <div className="my-4 flex items-center justify-center">
@@ -25,7 +31,11 @@ const Register = () => {
           />
         </div>
         <div className="pt-3 flex justify-center items-center">
-          <Button className="text-lg bg-[#FF6F20] hover:bg-orange-400">
+          <Button
+            type="button"
+            onClick={handleRegister}
+            className="text-lg bg-[#FF6F20] hover:bg-orange-400"
+          >
             Cadastrar
           </Button>
         </div>
