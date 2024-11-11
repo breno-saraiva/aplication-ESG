@@ -1,7 +1,7 @@
 import { Button } from "@/shared/components/ui/button";
 import { Input } from "@/shared/components/ui/input";
 import { Label } from "@/shared/components/ui/label";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { registerSchema } from "../../schema/registerSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -22,13 +22,13 @@ const Register = () => {
     defaultValues: defaultValueRegister,
   });
 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   async function onSubmit(data: z.infer<typeof registerSchema>) {
     try {
       await registerService.execute(data);
-      console.log(localStorage.getItem("@tipo_usua"));
-      console.log("você foi cadastrado");
+      navigate(0);
+      alert("você foi cadastrado!");
     } catch (error) {
       console.log(error);
       alert(error);

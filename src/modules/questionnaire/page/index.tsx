@@ -48,8 +48,6 @@ const Questionnaire = () => {
           ? "fine"
           : "happy",
     }));
-    console.log("========================", feedBackFace.cont);
-    console.log("========================", checked);
   }
 
   function changeFeedBack() {
@@ -73,9 +71,6 @@ const Questionnaire = () => {
       <header className="py-4 px-8 bg-[#12642A] flex items-center justify-between">
         <img className="w-24" src={logo} alt="logo" />
         <div className="flex gap-8 items-center">
-          <h1 className="text-white text-lg font-bold w">
-            Olá, <span>Fabão</span>
-          </h1>
           <Link to={"/"}>
             <IoIosLogOut color="white" size={30} />
           </Link>
